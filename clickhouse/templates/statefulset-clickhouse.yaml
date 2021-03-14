@@ -47,7 +47,7 @@ spec:
     {{- if .Values.clickhouse.imagePullSecrets }}
       imagePullSecrets:
     {{- range .Values.clickhouse.imagePullSecrets }}
-      - name: {{ . | quote }}
+      - name: {{ . }}
     {{- end }}
     {{- end }}
       initContainers:
